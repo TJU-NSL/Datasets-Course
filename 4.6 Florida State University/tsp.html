@@ -1,0 +1,319 @@
+
+<html>
+
+  <head>
+    <title>
+      TSP - Data for the Traveling Salesperson Problem
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055" >
+
+    <h1 align = "center">
+      TSP <br> Data for the Traveling Salesperson Problem
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>TSP</b>,
+      a dataset directory which
+      contains some examples of data for the traveleing salesperson problem.
+    </p>
+
+    <p>
+      Most of these examples come from TSPLIB, a collection of
+      traveling salesman problem datasets maintained by Gerhard Reinelt at
+      <a href = "http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/">
+                "http://comopt.ifi.uni-heidelberg.de/software/TSPLIB95/"</a>
+    </p>
+
+    <p>
+      In the traveling salesperson problem, a salesperson, who lives in one
+      of the cities, is expected to make a round trip visiting all the
+      other cities and returning home.  (It doesn't actually matter which
+      city is the starting point.)  The requirement is that the total distance
+      traveled be as small as possible.
+    </p>
+
+    <p>
+      It turns out that this simple problem is actually remarkably hard to
+      solve, particularly if one insists on finding the absolutely best answer.
+      Approaches to solving this problem have used simple enumeration, Monte
+      Carlo estimation, minimal spanning trees, linear programming, 
+      simulated annealing, Tabu searches, the branch and bound procedure, 
+      the integer assignment problem, the convex hull, genetic algorithms, 
+      ant colony algorithms, and the cross-entropy method,
+    </p>
+
+    <p>
+      Thus, this simple problem has been the inspiration for many new ways of
+      trying to solve not just the traveling salesperson problem but related
+      "combinatorial optimization" problems, in which a discrete set of choices
+      result in a payoff which is to be maximized or a cost which is to be minimized.
+    </p>
+
+    <p>
+      In the simplest version of the traveling salesperson problem, it is possible to travel
+      from any city A to any city B, and the distance is the same both ways.
+      This might be imagined to correspond to travel by air.  
+    </p>
+
+    <p>
+      In a variation of the problem, it might not be possible to travel
+      directly between certain cities.  This is essentially equivalent to setting
+      the corresponding intercity distance to be infinite.  This could
+      be considered an attempt to include the realities of highway travel.
+    </p>
+
+    <p>
+      To specify the problem, we may provide the spatial coordinates of the 
+      N points.  Here again, there can be complications.  It would be
+      natural to expect coordinates on a plane, with the Euclidean distance,
+      but the data might be more accurately described as lying on a sphere,
+      with travel constrained to the surface; or we might have locations
+      in a gridded city, in which case distance is measured with the L1
+      norm rather than the Euclidean norm, and there are further obvious
+      variations.
+    </p>
+
+    <p>
+      If we are given a set of coordinates and a description of the distance
+      function, we can compute the distance matrix.  So we might suppose
+      that any distance matrix comes from a set of point coordinates.  But
+      that's not true.  If we start with the distance matrix, we are free
+      to put down numbers that violate the triangle inequality, for instance.
+      Problems in which the data does not come from an underlying set of
+      point coordinates and a norm turn out to be much harder, since
+      certain geometric facts can no longer be used to estimate the solution.  
+    </p>
+
+    <p>
+      For the data considered here, we will expect symmetry, that is,
+      that the distance is the same coming and going.  We will allow
+      problems to be specified either by node coordinates and a norm,
+      (usually 2D planar points and the Euclidean norm) or by an
+      abstract distance matrix.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "https://www.gnu.org/licenses/lgpl-3.0.en.html">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../datasets/cities/cities.html">
+      CITIES</a>,
+      a dataset directory which
+      contains sets of information about cities and the distances
+      between them; 
+    </p>
+
+    <p>
+      <a href = "../../f_src/cities/cities.html">
+      CITIES</a>,
+      a FORTRAN90 library which
+      handles various problems associated with a set of "cities" on a map.
+    </p>
+
+    <p>
+      <a href = "../../m_src/cities/cities.html">
+      CITIES</a>,
+      a MATLAB library which
+      handles various problems associated with a set of "cities" on a map.
+    </p>
+
+    <p>
+      <a href = "../../f_src/distance_to_position/distance_to_position.html">
+      DISTANCE_TO_POSITION</a>,
+      a FORTRAN90 program which
+      estimates the positions of cities based on a city-to-city distance table.
+    </p>
+
+    <p>
+      <a href = "../../m_src/distance_to_position/distance_to_position.html">
+      DISTANCE_TO_POSITION</a>,
+      a MATLAB program which
+      estimates the positions of cities based on a city-to-city distance table.
+    </p>
+
+    <p>
+      <a href = "../../m_src/distance_to_position_sphere/distance_to_position_sphere.html">
+      DISTANCE_TO_POSITION_SPHERE</a>,
+      a MATLAB program which
+      estimates the positions of cities on a sphere (such as the earth)
+      based on a city-to-city distance table.
+    </p>
+
+    <p>
+      <a href = "../../f_src/lau_np/lau_np.html">
+      LAU_NP</a>,
+      a FORTRAN90 library which
+      implements heuristic algorithms for various NP-hard combinatorial problems.
+    </p>
+
+    <h3 align = "center">
+      Reference:
+    </h3>
+
+    <p>
+      <ol>
+        <li>
+          Gerhard Reinelt,<br>
+          TSPLIB - A Traveling Salesman Problem Library,<br>
+          ORSA Journal on Computing,<br>
+          Volume 3, Number 4, Fall 1991, pages 376-384.
+        </li>
+      </ol>
+    </p>
+
+    <h3 align = "center">
+      Datasets:
+    </h3>
+
+    <p>
+      <b>ATT48</b> is a set of 48 cities (US state capitals) from TSPLIB.
+      The minimal tour has length 33523.
+      <ul>
+        <li>
+          <a href = "att48.tsp">att48.tsp</a>,
+          the TSP specification of the data.
+        </li>
+        <li>
+          <a href = "att48_d.txt">att48_d.txt</a>,
+          the intercity distance table.
+        </li>
+        <li>
+          <a href = "att48_xy.txt">att48_xy.txt</a>,
+          the xy coordinates of each city.
+        </li>
+        <li>
+          <a href = "att48_s.txt">att48_s.txt</a>,
+          an itinerary that minimizes the total distance.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>DANTZIG42</b> is a set of 42 cities, from TSPLIB.
+      The minimal tour has length 699.
+      <ul>
+        <li>
+          <a href = "dantzig42.tsp">dantzig42.tsp</a>,
+          the TSP specification of the data.
+        </li>
+        <li>
+          <a href = "dantzig42_d.txt">dantzig42_d.txt</a>,
+          the intercity distance table.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>FIVE</b> is a set of 5 cities.
+      The minimal tour has length 19.
+      <ul>
+        <li>
+          <a href = "five_d.txt">five_d.txt</a>,
+          the intercity distance table.
+        </li>
+        <li>
+          <a href = "five_s.txt">five_s.txt</a>,
+          an itinerary that minimizes the total distance.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>FRI26</b> is a set of 26 cities, from TSPLIB.
+      The minimal tour has length 937.
+      <ul>
+        <li>
+          <a href = "fri26.tsp">fri26.tsp</a>,
+          the TSP specification of the data.
+        </li>
+        <li>
+          <a href = "fri26_d.txt">fri26_d.txt</a>,
+          the intercity distance table.
+        </li>
+        <li>
+          <a href = "fri26_s.txt">fri26_s.txt</a>,
+          an itinerary that minimizes the total distance.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>GR17</b> is a set of 17 cities, from TSPLIB.
+      The minimal tour has length 2085.
+      <ul>
+        <li>
+          <a href = "gr17.tsp">gr17.tsp</a>,
+          the TSP specification of the data.
+        </li>
+        <li>
+          <a href = "gr17_d.txt">gr17_d.txt</a>,
+          the intercity distance table.
+        </li>
+        <li>
+          <a href = "gr17_s.txt">gr17_s.txt</a>,
+          an itinerary that minimizes the total distance.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P01</b> is a set of 15 cities.  It is NOT from TSPLIB.
+      The minimal cost is 291.
+      <ul>
+        <li>
+          <a href = "p01.tsp">p01.tsp</a>,
+          the TSP specification of the data.
+        </li>
+        <li>
+          <a href = "p01_d.txt">p01_d.txt</a>,
+          the intercity distance table.
+        </li>
+        <li>
+          <a href = "p01_s.txt">p01_s.txt</a>,
+          an itinerary that minimizes the total distance.
+        </li>
+        <li>
+          <a href = "p01_sxy.txt">p01_sxy.txt</a>,
+          the XY coordinates of the minimal itinerary.
+        </li>
+        <li>
+          <a href = "p01_sxy.png">p01_sxy.png</a>,
+          an image of the minimal itinerary.
+        </li>
+        <li>
+          <a href = "p01_xy.txt">p01_xy.txt</a>,
+          a set of XY coordinates for the cities, inferred from the distances.
+        </li>
+        <li>
+          <a href = "p01_xy.png">p01_xy.png</a>,
+          an image of the XY coordinates.
+        </li>
+      </ul>
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 23 July 2019.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>

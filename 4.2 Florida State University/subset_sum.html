@@ -1,0 +1,270 @@
+
+<html>
+
+  <head>
+    <title>
+      SUBSET_SUM - Data for the Subset Sum Problem
+    </title>
+  </head>
+
+  <body bgcolor="#EEEEEE" link="#CC0000" alink="#FF3300" vlink="#000055" >
+
+    <h1 align = "center">
+      SUBSET_SUM <br> Data for the Subset Sum Problem
+    </h1>
+
+    <hr>
+
+    <p>
+      <b>SUBSET_SUM</b>
+      is a dataset directory which
+      contains some examples of data for the subset sum problem.
+    </p>
+
+    <p>
+      The subset sum problem is given a target value C and a set of N numbers W
+      and seeks one or more subset of W that add up to exactly C, or if that is
+      not possible, to come as close to C as possible without exceeding it.
+    </p>
+
+    <p>
+      An optimal solution is a subset W whose elements add up to C.  An
+      optimal solution does not always exist.  A <i>suboptimal solution</i> is 
+      a subset W whose elements add up to a number Csub which is less than or 
+      equal to C, such that there is no other subset whose sum is greater than 
+      Csub but less than or equal to C.  For any subset sum problem, there is 
+      always at least one suboptimal solution.
+    </p>
+
+    <p>
+      A solution of the subset sum problem can be regarded as a binary
+      number between 0 and 2^N-1, with the I-th binary digit indicating whether
+      item I is included or excluded from the sum.
+    </p>
+
+    <p>
+      The subset problem problem is a special case of the 0-1 Knapsack problem,
+      in which the profit of every item is equal to its weight.
+    </p>
+
+    <h3 align = "center">
+      Licensing:
+    </h3>
+
+    <p>
+      The computer code and data files described and made available on this web page 
+      are distributed under
+      <a href = "../../txt/gnu_lgpl.txt">the GNU LGPL license.</a>
+    </p>
+
+    <h3 align = "center">
+      Related Data and Programs:
+    </h3>
+
+    <p>
+      <a href = "../../datasets/bin_packing/bin_packing.html">
+      BIN_PACKING</a>, 
+      a dataset directory which 
+      contains examples of the bin packing problem, in which a number of
+      objects are to be packed in the minimum possible number of uniform bins;
+    </p>
+
+    <p>
+      <a href = "../../datasets/change_making/change_making.html">
+      CHANGE_MAKING</a>, 
+      a dataset directory which 
+      contains test data for the change making problem;
+    </p>
+
+    <p>
+      <a href = "../../datasets/generalized_assignment/generalized_assignment.html">
+      GENERALIZED_ASSIGNMENT</a>, 
+      a dataset directory which 
+      contains test data for the generalized assignment problem;
+    </p>
+
+    <p>
+      <a href = "../../f77_src/knapsack/knapsack.html">
+      KNAPSACK</a>,
+      a FORTRAN77 library which
+      solves a variety of knapsack problems.
+    </p>
+
+    <p>
+      <a href = "../../datasets/knapsack_01/knapsack_01.html">
+      KNAPSACK_01</a>, 
+      a dataset directory which 
+      contains test data for the 0/1 knapsack problem;
+    </p>
+
+    <p>
+      <a href = "../../datasets/knapsack_multiple/knapsack_multiple.html">
+      KNAPSACK_MULTIPLE</a>, 
+      a dataset directory which 
+      contains test data for the multiple knapsack problem;
+    </p>
+
+    <p>
+      <a href = "../../datasets/partition_problem/partition_problem.html">
+      PARTITION_PROBLEM</a>,
+      a dataset directory which
+      contains examples of the partition problem, in which a set of numbers is given,
+      and it is desired to break the set into two subsets with equal sum.
+    </p>
+
+    <p>
+      <a href = "../../m_src/subset_sum/subset_sum.html">
+      SUBSET_SUM</a>,
+      a MATLAB library which
+      seeks solutions of the subset sum problem.
+    </p>
+
+    <h3 align = "center">
+      Datasets:
+    </h3>
+
+    <p>
+      <b>P01</b> is a set of N = 8 weights, for a target of 53.  Three 
+      solutions are given.
+      <ul>
+        <li>
+          <a href = "p01_c.txt">p01_c.txt</a>,
+          the target value.
+        </li>
+        <li>
+          <a href = "p01_w.txt">p01_w.txt</a>,
+          the weights.
+        </li>
+        <li>
+          <a href = "p01_s.txt">p01_s.txt</a>,
+          three solutions, given as binary strings.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P02</b> is a set of N = 10 weights, for a target of 5842.
+      <ul>
+        <li>
+          <a href = "p02_c.txt">p02_c.txt</a>,
+          the target value.
+        </li>
+        <li>
+          <a href = "p02_w.txt">p02_w.txt</a>,
+          the weights.
+        </li>
+        <li>
+          <a href = "p02_s.txt">p02_s.txt</a>,
+          one solution, given as a binary string.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P03</b> is a set of N = 21 weights, for a target of 2463098.
+      <ul>
+        <li>
+          <a href = "p03_c.txt">p03_c.txt</a>,
+          the target value.
+        </li>
+        <li>
+          <a href = "p03_w.txt">p03_w.txt</a>,
+          the weights.
+        </li>
+        <li>
+          <a href = "p03_s.txt">p03_s.txt</a>,
+          one solution, given as a binary string.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P04</b> is a set of N = 10 weights, for a target of 50.
+      <ul>
+        <li>
+          <a href = "p04_c.txt">p04_c.txt</a>,
+          the target value.
+        </li>
+        <li>
+          <a href = "p04_w.txt">p04_w.txt</a>,
+          the weights.
+        </li>
+        <li>
+          <a href = "p04_s.txt">p04_s.txt</a>,
+          one solution, given as a binary string.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P05</b> is a set of N = 9 weights, for a target of 100.
+      <ul>
+        <li>
+          <a href = "p05_c.txt">p05_c.txt</a>,
+          the target value.
+        </li>
+        <li>
+          <a href = "p05_w.txt">p05_w.txt</a>,
+          the weights.
+        </li>
+        <li>
+          <a href = "p05_s.txt">p05_s.txt</a>,
+          one solution, given as a binary string.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P06</b> is a set of N = 6 weights, for a target of 22.
+      <ul>
+        <li>
+          <a href = "p06_c.txt">p06_c.txt</a>,
+          the target value.
+        </li>
+        <li>
+          <a href = "p06_w.txt">p06_w.txt</a>,
+          the weights.
+        </li>
+        <li>
+          <a href = "p06_s.txt">p06_s.txt</a>,
+          one solution, given as a binary string.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      <b>P07</b> is a set of N = 10 weights, for a target of 50,
+      and comes from 
+      <a href = "sam_loyd.png">Sam Loyd's Cyclopedia of Puzzles, 1914</a>.
+      <ul>
+        <li>
+          <a href = "p07_c.txt">p07_c.txt</a>,
+          the target value.
+        </li>
+        <li>
+          <a href = "p07_w.txt">p07_w.txt</a>,
+          the weights.
+        </li>
+        <li>
+          <a href = "p07_s.txt">p07_s.txt</a>,
+          one solution, given as a binary string.
+        </li>
+      </ul>
+    </p>
+
+    <p>
+      You can go up one level to <a href = "../datasets.html">
+      the DATASETS directory</a>.
+    </p>
+
+    <hr>
+
+    <i>
+      Last revised on 31 December 2013.
+    </i>
+
+    <!-- John Burkardt -->
+
+  </body>
+
+</html>
